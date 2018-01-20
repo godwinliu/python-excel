@@ -26,3 +26,7 @@ print(index)
 print("\n\nValues:\n")
 val = df.values
 print(val)
+
+searchstr = 'fre'
+print("\n\nSearch - contains..%s\n", searchstr)
+print(df.loc[df['name'].str.contains(searchstr)])
