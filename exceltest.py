@@ -28,5 +28,6 @@ val = df.values
 print(val)
 
 searchstr = 'fre'
-print("\n\nSearch - contains..%s\n", searchstr)
+searchfield = 'name'
+print("\n\nSearch - field:'" + searchfield + "' contains..'" + searchstr + "'\n")
 print(df.loc[df['name'].str.contains(searchstr)])
